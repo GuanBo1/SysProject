@@ -7,6 +7,7 @@ import { NzLayoutModule } from 'ng-zorro-antd/layout';
 import { NzMenuModule } from 'ng-zorro-antd/menu';
 import { NzMessageModule } from 'ng-zorro-antd/message';
 import { NzResultModule } from 'ng-zorro-antd/result';
+import { NzNotificationModule } from 'ng-zorro-antd/notification';
 
 
 
@@ -20,7 +21,8 @@ import { NzResultModule } from 'ng-zorro-antd/result';
     NzFormModule,
     NzInputModule,
     NzButtonModule,
-    NzMessageModule
+    NzMessageModule,
+    NzNotificationModule
   ],
   exports:[
     NzLayoutModule,
@@ -29,7 +31,8 @@ import { NzResultModule } from 'ng-zorro-antd/result';
     NzFormModule,
     NzInputModule,
     NzButtonModule,
-    NzMessageModule
-  ]
+    NzMessageModule,
+    NzNotificationModule
+  ],
 })
 export class AntImportModule { }

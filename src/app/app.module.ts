@@ -15,6 +15,7 @@ import { LoginComponent } from './pages/login/login.component';
 import { MainComponent } from './pages/main/main.component';
 import { ErrorComponent } from './pages/error/error.component';
 import { HomeComponent } from './pages/home/home.component';
+import { NzNotificationService } from 'ng-zorro-antd/notification';
 
 
 registerLocaleData(zh);
@@ -37,7 +38,10 @@ registerLocaleData(zh);
     IconsProviderModule,
     AntImportModule
   ],
-  providers: [{ provide: NZ_I18N, useValue: zh_CN }],
+  providers: [
+    { provide: NZ_I18N, useValue: zh_CN },
+    // { provide: NzNotificationService}
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
